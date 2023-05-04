@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root{
+    --cor-background: linear-gradient(0, #222d33 0, #21292c 8.33%, #1f2425 16.67%, #1e1e1e 25%, #1d1716 33.33%, #1b0e0d 41.67%, #1a0000 50%, #180000 58.33%, #160000 66.67%, #130000 75%, #0e0000 83.33%, #060000 91.67%, #000000 100%);
     --cor-primaria: #1A0000;
     --cor-secundaria: #F5EDCE;
     --cor-terciaria: #89C4E1;
@@ -16,8 +17,7 @@
 
 body{
     box-sizing: border-box;
-   /* height: 100vh;*/
-    background-color: var(--cor-primaria);
+    background-image: var(--cor-background);
     color: #F6F6F6;
 }
 
@@ -98,13 +98,12 @@ body{
     
 }
 
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     background-color:var(--cor-holver);
 }
 
 .apresentacao__foto{
     width: 50%;
-   /* height: 550px;*/
     border-radius: 12px;
 }
 
@@ -117,6 +116,53 @@ body{
     font-weight: 400;
     font-size: 1.5rem;
 }
+
+.apresentacao__form{
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__form__textarea{
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+.apresentacao__form__label{
+    display: block;
+    margin: 20px 0 0 0;
+}
+
+.apresentacao__form__input{
+    padding: 10px 150px 10px 2px;
+}
+
+.apresentacao__form__radio{
+    display: block;
+    padding: 10px 150px 10px 5px;
+    margin: 0 0 0 8px;
+}
+
+.apresentacao__form__fieldset{
+    margin: 40px 0 0 0;
+}
+
+/*.apresentacao__form__fieldset__legend{
+    margin: 20px;
+}*/
+
+.apresentacao__form__fieldset__select{
+    margin: 10px;
+
+}
+
+.apresentacao__form__button{
+    margin: 20px 0 0 0;
+    padding: 5px;
+    background: var(--cor-secundaria);
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+}
+
 
 @media(max-width: 1200px){
 
@@ -137,3 +183,6 @@ body{
         width: auto;
     }
 }
+
+
+
